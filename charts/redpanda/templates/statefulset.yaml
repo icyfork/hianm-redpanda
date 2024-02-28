@@ -419,7 +419,7 @@ spec:
   {{- end }}
         resources:
           requests:
-            storage: 200Gi
+            storage: 2000Gi
 {{- end }}
 {{- if and (include "is-licensed" . | fromJson).bool (include "storage-tiered-config" .|fromJson).cloud_storage_enabled (eq (include "storage-tiered-mountType" .) "persistentVolume") }}
     - metadata:
